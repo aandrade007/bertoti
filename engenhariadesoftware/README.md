@@ -1,4 +1,4 @@
-1° resumo do primeiro texto:
+**1° Resumo do primeiro texto:**
 
 O texto fala sobre o que é realmente engenharia de software e como ela é diferente de programação ou ciência da computação. Muitas vezes esses termos são usados como se fossem a mesma coisa, mas têm significados diferentes. Programar é basicamente escrever código, enquanto a engenharia de software envolve todo o processo de criação e manutenção desse código com mais organização, planejamento e qualidade a longo prazo.
 
@@ -8,9 +8,9 @@ O Google, por ter muita experiência desenvolvendo sistemas grandes e complexos,
 
 
 
-2° resumo do segundo texto:
+**2° Resumo do segundo texto:**
 
-A ideia do texto é mostrar que engenharia de software não é só escrever código, mas também cuidar do código ao longo do tempo — desde quando ele nasce até quando é aposentado.
+A ideia do texto é mostrar que engenharia de software não é **só** escrever código, mas também cuidar do código ao longo do tempo, desde quando ele nasce até quando é aposentado.
 O Google aprendeu, com o tempo, que um bom sistema precisa ser feito pensando em três coisas:
 
 1- Tempo e Mudança: O código vai precisar mudar com o tempo. Tem que ser fácil de manter e adaptar.
@@ -19,4 +19,27 @@ O Google aprendeu, com o tempo, que um bom sistema precisa ser feito pensando em
 
 3- Decisões e Custos: Nem tudo dá pra fazer perfeito. Cada escolha tem um custo, e a gente precisa saber equilibrar.
 
-No fim, o que eles dizem é: programar bem não é só fazer funcionar hoje, mas fazer de um jeito que continue funcionando, sendo escalável e sendo útil por muito tempo.
+No fim, o que eles dizem é: programar bem não é só fazer funcionar hoje, mas fazer de um jeito que continue funcionando, sendo ESCALÁVEL e sendo útil por muito tempo.
+Eles aprenderam isso na marra, pois, tiveram que evoluir e escalar seu projeto rapidamente. E, isso fez deles uma das maiores empresas do mundo.
+
+**3° Exemplos de Tradeoffs:**
+**1. Custo vs. Qualidade (Exemplo de Desenvolvimento de Software)**
+**Exemplo:** Quando você está desenvolvendo um aplicativo, você pode escolher entre usar bibliotecas e frameworks gratuitos ou pagar por uma ferramenta paga que oferece mais recursos e maior qualidade.
+Não estou dizendo que as versões pagas são as melhores, portanto, muita das vezes elas oferecem mais desenmpenho.
+
+**Explicação:** Se você optar por usar uma solução gratuita, o custo do projeto diminui, mas pode ter que lidar com limitações, como menos documentação, bugs ou menos suporte. 
+Se você pagar por uma ferramenta premium, a qualidade do desenvolvimento tende a ser melhor, com mais funcionalidades e suporte, mas o custo aumenta, o que pode impactar o orçamento do projeto.
+
+**2. Velocidade vs. Precisão (Exemplo de Programação)**
+**Exemplo:** Em um projeto de desenvolvimento de um sistema, você pode priorizar a velocidade de entrega, fazendo o código de forma mais rápida e com algumas soluções temporárias, ou pode dedicar mais tempo para refinar o código e garantir que tudo funcione de maneira ideal.
+
+**Explicação:** Se você focar em rapidez, pode entregar o projeto no prazo, mas pode deixar "gambiarras" no código, o que pode comprometer a manutenção e a escalabilidade no futuro. Se focar em precisão, o código será mais bem estruturado e eficiente, mas a entrega será mais demorada e o projeto pode ultrapassar o cronograma. Assim o ideal seria equilibrar a rapidez com a qualidade e precisão.
+
+**3. Windows vs. Linux (Exemplo de Sistema Operacional para Programação)**
+**Exemplo:** Como estudante de ADS, você pode escolher usar o Windows ou o Linux como sistema operacional para desenvolver seus projetos e estudar. 
+O Windows oferece uma interface mais amigável e compatibilidade com uma maior variedade de programas, enquanto o Linux é mais flexível, poderoso para desenvolvimento, mas pode ser menos intuitivo.
+
+**Explicação:** Usar o Windows pode facilitar o uso de programas gráficos e softwares populares, como o Visual Studio, mas em contrapartida, você pode enfrentar dificuldades ao lidar com ambientes de desenvolvimento que exigem mais controle, como servidores ou ambientes de programação voltados para back-end. 
+Já o Linux oferece maior controle e facilidade para trabalhar com ferramentas de programação, como Docker e servidores, e é muito usado em ambientes de desenvolvimento e produção, mas pode ser mais difícil de aprender e usar, principalmente para quem não está acostumado com a linha de comando.
+
+
