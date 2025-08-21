@@ -9,7 +9,7 @@ O Google, por ter muita experiência desenvolvendo sistemas grandes e complexos,
 
 
 **2° Resumo do segundo texto:**
-<br>
+
 A ideia do texto é mostrar que engenharia de software não é **só** escrever código, mas também cuidar do código ao longo do tempo, desde quando ele nasce até quando é aposentado.
 O Google aprendeu, com o tempo, que um bom sistema precisa ser feito pensando em três coisas:
 
@@ -23,7 +23,9 @@ No fim, o que eles dizem é: programar bem não é só fazer funcionar hoje, mas
 Eles aprenderam isso na marra, pois, tiveram que evoluir e escalar seu projeto rapidamente. E, isso fez deles uma das maiores empresas do mundo.
 
 **3° Exemplos de Tradeoffs:**
+
 **1. Custo vs. Qualidade (Exemplo de Desenvolvimento de Software)**
+
 **Exemplo:** Quando você está desenvolvendo um aplicativo, você pode escolher entre usar bibliotecas e frameworks gratuitos ou pagar por uma ferramenta paga que oferece mais recursos e maior qualidade.
 Não estou dizendo que as versões pagas são as melhores, portanto, muita das vezes elas oferecem mais desenmpenho.
 
@@ -31,11 +33,13 @@ Não estou dizendo que as versões pagas são as melhores, portanto, muita das v
 Se você pagar por uma ferramenta premium, a qualidade do desenvolvimento tende a ser melhor, com mais funcionalidades e suporte, mas o custo aumenta, o que pode impactar o orçamento do projeto.
 
 **2. Velocidade vs. Precisão (Exemplo de Programação)**
+
 **Exemplo:** Em um projeto de desenvolvimento de um sistema, você pode priorizar a velocidade de entrega, fazendo o código de forma mais rápida e com algumas soluções temporárias, ou pode dedicar mais tempo para refinar o código e garantir que tudo funcione de maneira ideal.
 
 **Explicação:** Se você focar em rapidez, pode entregar o projeto no prazo, mas pode deixar "gambiarras" no código, o que pode comprometer a manutenção e a escalabilidade no futuro. Se focar em precisão, o código será mais bem estruturado e eficiente, mas a entrega será mais demorada e o projeto pode ultrapassar o cronograma. Assim o ideal seria equilibrar a rapidez com a qualidade e precisão.
 
 **3. Windows vs. Linux (Exemplo de Sistema Operacional para Programação)**
+
 **Exemplo:** Como estudante de ADS, você pode escolher usar o Windows ou o Linux como sistema operacional para desenvolver seus projetos e estudar. 
 O Windows oferece uma interface mais amigável e compatibilidade com uma maior variedade de programas, enquanto o Linux é mais flexível, poderoso para desenvolvimento, mas pode ser menos intuitivo.
 
