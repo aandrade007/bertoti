@@ -24,7 +24,7 @@ Eles aprenderam isso na marra, pois, tiveram que evoluir e escalar seu projeto r
 
 **3° Exemplos de Tradeoffs:**
 
-**1. Custo vs. Qualidade (Exemplo de Desenvolvimento de Software)**
+**1. Custo vs. Qualidade**
 
 **Exemplo:** Quando você está desenvolvendo um aplicativo, você pode escolher entre usar bibliotecas e frameworks gratuitos ou pagar por uma ferramenta paga que oferece mais recursos e maior qualidade.
 Não estou dizendo que as versões pagas são as melhores, portanto, muita das vezes elas oferecem mais desenmpenho.
@@ -32,13 +32,13 @@ Não estou dizendo que as versões pagas são as melhores, portanto, muita das v
 **Explicação:** Se você optar por usar uma solução gratuita, o custo do projeto diminui, mas pode ter que lidar com limitações, como menos documentação, bugs ou menos suporte. 
 Se você pagar por uma ferramenta premium, a qualidade do desenvolvimento tende a ser melhor, com mais funcionalidades e suporte, mas o custo aumenta, o que pode impactar o orçamento do projeto.
 
-**2. Velocidade vs. Precisão (Exemplo de Programação)**
+**2. Velocidade vs. Precisão**
 
 **Exemplo:** Em um projeto de desenvolvimento de um sistema, você pode priorizar a velocidade de entrega, fazendo o código de forma mais rápida e com algumas soluções temporárias, ou pode dedicar mais tempo para refinar o código e garantir que tudo funcione de maneira ideal.
 
 **Explicação:** Se você focar em rapidez, pode entregar o projeto no prazo, mas pode deixar "gambiarras" no código, o que pode comprometer a manutenção e a escalabilidade no futuro. Se focar em precisão, o código será mais bem estruturado e eficiente, mas a entrega será mais demorada e o projeto pode ultrapassar o cronograma. Assim o ideal seria equilibrar a rapidez com a qualidade e precisão.
 
-**3. Windows vs. Linux (Exemplo de Sistema Operacional para Programação)**
+**3. Windows vs. Linux**
 
 **Exemplo:** Como estudante de ADS, você pode escolher usar o Windows ou o Linux como sistema operacional para desenvolver seus projetos e estudar. 
 O Windows oferece uma interface mais amigável e compatibilidade com uma maior variedade de programas, enquanto o Linux é mais flexível, poderoso para desenvolvimento, mas pode ser menos intuitivo.
