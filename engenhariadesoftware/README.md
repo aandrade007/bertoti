@@ -9,7 +9,7 @@ O Google, por ter muita experiência desenvolvendo sistemas grandes e complexos,
 
 
 **2° Resumo do segundo texto:**
-
+<br>
 A ideia do texto é mostrar que engenharia de software não é **só** escrever código, mas também cuidar do código ao longo do tempo, desde quando ele nasce até quando é aposentado.
 O Google aprendeu, com o tempo, que um bom sistema precisa ser feito pensando em três coisas:
 
