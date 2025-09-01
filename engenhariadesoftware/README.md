@@ -22,6 +22,8 @@ O Google aprendeu, com o tempo, que um bom sistema precisa ser feito pensando em
 No fim, o que eles dizem é: programar bem não é só fazer funcionar hoje, mas fazer de um jeito que continue funcionando, sendo ESCALÁVEL e sendo útil por muito tempo.
 Eles aprenderam isso na marra, pois, tiveram que evoluir e escalar seu projeto rapidamente. E, isso fez deles uma das maiores empresas do mundo.
 
+
+
 **3° Exemplos de Tradeoffs:**
 
 **1. Custo vs. Qualidade**
@@ -45,5 +47,24 @@ O Windows oferece uma interface mais amigável e compatibilidade com uma maior v
 
 **Explicação:** Usar o Windows pode facilitar o uso de programas gráficos e softwares populares, como o Visual Studio, mas em contrapartida, você pode enfrentar dificuldades ao lidar com ambientes de desenvolvimento que exigem mais controle, como servidores ou ambientes de programação voltados para back-end. 
 Já o Linux oferece maior controle e facilidade para trabalhar com ferramentas de programação, como Docker e servidores, e é muito usado em ambientes de desenvolvimento e produção, mas pode ser mais difícil de aprender e usar, principalmente para quem não está acostumado com a linha de comando.
+
+
+
+**4° Diagrama de classes UML:**
+
+<img width="1167" height="647" alt="image" src="https://github.com/user-attachments/assets/fc410466-9900-4290-9499-479ce6a5ba9e" />
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
