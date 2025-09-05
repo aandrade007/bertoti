@@ -55,6 +55,222 @@ Já o Linux oferece maior controle e facilidade para trabalhar com ferramentas d
 <img width="1167" height="647" alt="image" src="https://github.com/user-attachments/assets/fc410466-9900-4290-9499-479ce6a5ba9e" />
 
 
+**5° Código Java:**
+
+```java 
+public class Main {
+    public static void main(String[] args) {
+        Empresa empresa = getEmpresa();
+
+        System.out.println("Funcionários cadastrados:");
+        empresa.listarFuncionarios();
+
+        empresa.promover("123.456.789-0", "Coordenador");
+
+        empresa.aumentarSalario("098.765.432-1", 500);
+
+        Funcionarios encontrado = empresa.buscarFuncionario("56.076.164-8");
+        if(encontrado != null){
+            System.out.println("Funcionário encontrado: " + encontrado);
+        } else {
+            System.out.println("Funcionário não encontrado!");
+        }
+
+        empresa.removerFuncionarios("123.456.789-0");
+
+        System.out.println("\nFuncionários após remoção:");
+        empresa.listarFuncionarios();
+    }
+
+    private static Empresa getEmpresa() {
+        Empresa empresa = new Empresa();
+
+        Funcionarios primeiro = new Funcionarios();
+        primeiro.setNome("Davi Andrade");
+        primeiro.setRg("56.076.164-8");
+        primeiro.setCargo("Engenheiro");
+        primeiro.setSalario(6500.00);
+
+        Funcionarios segundo = new Funcionarios();
+        segundo.setNome("Nicolas Anderson");
+        segundo.setRg("123.456.789-0");
+        segundo.setCargo("Professor");
+        segundo.setSalario(2000.00);
+
+        Funcionarios terceiro = new Funcionarios();
+        terceiro.setNome("Gustavo Zago");
+        terceiro.setRg("098.765.432-1");
+        terceiro.setCargo("Faxineiro");
+        terceiro.setSalario(1518.53);
+
+        empresa.adicionarFuncionario(primeiro);
+        empresa.adicionarFuncionario(segundo);
+        empresa.adicionarFuncionario(terceiro);
+        return empresa;
+    }
+}
+
+```
+
+```java
+import java.util.LinkedList;
+import java.util.List;
+
+public class Empresa {
+    private String nome;
+    private String cnpj;
+    private List<Funcionarios> funcionarios = new LinkedList<>();
+
+    void adicionarFuncionario(Funcionarios funcionario){
+        this.funcionarios.add(funcionario);
+    }
+
+    void removerFuncionarios(String rg){
+        funcionarios.removeIf(funcionario -> funcionario.getRg().equals(rg));
+    }
+
+    void promover(String rg, String novoCargo){
+        for(Funcionarios funcionario : funcionarios){
+            if(funcionario.getRg().equals(rg)){
+                funcionario.setCargo(novoCargo);
+                System.out.println(funcionario.getNome() + " foi promovido para " + novoCargo);
+            }
+        }
+    }
+
+    void aumentarSalario(String rg, double aumento){
+        for(Funcionarios funcionario : funcionarios){
+            if(funcionario.getRg().equals(rg)){
+                funcionario.setSalario(funcionario.getSalario() + aumento);
+                System.out.println("Novo salário de " + funcionario.getNome() + ": " + funcionario.getSalario());
+            }
+        }
+    }
+
+    Funcionarios buscarFuncionario(String rg){
+        for(Funcionarios funcionario : funcionarios){
+            if(funcionario.getRg().equals(rg)){
+                return funcionario;
+            }
+        }
+        return null;
+    }
+
+    void listarFuncionarios(){
+        for(Funcionarios funcionario : funcionarios){
+            System.out.println(funcionario);
+        }
+    }
+}
+
+```
+
+```java
+public class Funcionarios {
+    private String nome;
+    private String rg;
+    private String cargo;
+    private double salario;
+
+    public String getNome(){
+        return nome;
+    }
+
+    public String getRg(){
+        return rg;
+    }
+
+    public String getCargo(){
+        return cargo;
+    }
+
+    public double getSalario(){
+        return salario;
+    }
+
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setRg(String rg){
+        this.rg = rg;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
+
+    public void setSalario(double salario){
+        this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + ", RG: " + rg + ", Cargo: " + cargo + ", Salário: " + salario;
+    }
+
+}
+
+```
+
+
+**6° Teste automatizados:**
+
+```java
+
+public class Teste {
+    public static void teste(String[] args) {
+        Empresa empresa = getEmpresa();
+
+        System.out.println("Funcionários cadastrados:");
+        empresa.listarFuncionarios();
+
+        empresa.promover("123.456.789-0", "Coordenador");
+
+        empresa.aumentarSalario("098.765.432-1", 500);
+
+        Funcionarios encontrado = empresa.buscarFuncionario("56.076.164-8");
+        if(encontrado != null){
+            System.out.println("Funcionário encontrado: " + encontrado);
+        } else {
+            System.out.println("Funcionário não encontrado!");
+        }
+
+        empresa.removerFuncionarios("123.456.789-0");
+
+        System.out.println("\nFuncionários após remoção:");
+        empresa.listarFuncionarios();
+    }
+
+    private static Empresa getEmpresa() {
+        Empresa empresa = new Empresa();
+
+        Funcionarios primeiro = new Funcionarios();
+        primeiro.setNome("Davi Andrade");
+        primeiro.setRg("56.076.164-8");
+        primeiro.setCargo("Engenheiro");
+        primeiro.setSalario(6500.00);
+
+        Funcionarios segundo = new Funcionarios();
+        segundo.setNome("Nicolas Anderson");
+        segundo.setRg("123.456.789-0");
+        segundo.setCargo("Professor");
+        segundo.setSalario(2000.00);
+
+        Funcionarios terceiro = new Funcionarios();
+        terceiro.setNome("Gustavo Zago");
+        terceiro.setRg("098.765.432-1");
+        terceiro.setCargo("Faxineiro");
+        terceiro.setSalario(1518.53);
+
+        empresa.adicionarFuncionario(primeiro);
+        empresa.adicionarFuncionario(segundo);
+        empresa.adicionarFuncionario(terceiro);
+        return empresa;
+    }
+}
+```
+
 
 
 
