@@ -272,6 +272,212 @@ public class Teste {
 ```
 
 
+**7° Diagrama de classes UML:**
+<img width="930" height="615" alt="image" src="https://github.com/user-attachments/assets/31c75422-1d2c-4b50-b5c8-cd192bc27c6c" />
+
+
+
+**8° Código em Java:**
+```java
+package pratica02;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class Aluno {
+    private int ra;
+    private String nome;
+    private char sexo;
+    private String rg;
+    private String cpf;
+    private Data data;
+    
+    public Aluno(int ra, String nome, char sexo, String rg, String cpf, Data data){
+        this.ra = ra;
+        this.nome = nome;
+        this.sexo = sexo;
+        this.rg = rg;
+        this.cpf = cpf;
+        this.data = data;
+    }
+    
+    public int getRa(){
+    return ra;
+    }
+    public String getNome(){
+    return nome;
+    }
+    public char getSexo(){
+    return sexo;
+    }
+    public String getRg(){
+    return rg;
+    }
+    public String getCpf(){
+    return cpf;
+    }
+    
+    public Data getData(){
+        return data;
+    }
+    
+    public void setRa(int ra){
+        this.ra = ra;
+    }
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+    public void setSexo(char sexo){
+        this.sexo = sexo;
+    }
+    public void setRg(String rg){
+        this.rg = rg;
+    }
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }  
+    
+    public void imprimir(){
+        System.out.printf("%d,%s,%c,%s,%s,%s\n", this.getRa(), this.getNome(), this.getSexo(), this.getRa(), this.getCpf(),this.data.formatarData());    
+    }
+    
+}   
+
+
+```
+
+```java
+package pratica02;
+public class Data {
+    private int dia;
+    private int mes;
+    private int ano;
+    
+    public Data(int dia, int mes, int ano){
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+    
+    public String formatarData(){ 
+        return dia + "/" + mes + "/" + ano;
+    }
+}
+
+```
+
+```java
+package pratica02;
+
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class Escola {
+    private String nome;
+    private List<Aluno> aluno = new LinkedList<>();
+    private String cnpj;
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCnpj(String cnpj) {
+        this.cnpj = cnpj;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCnpj() {
+        return cnpj;
+    }
+    
+    public void removerAluno(String rg){
+        this.aluno.removeIf(aluno -> aluno.getRg().equals(rg));
+    }
+    
+    public void adicionarAluno(Aluno aluno){
+        this.aluno.add(aluno);
+    }
+    
+    public void imprimir(){
+        for (Aluno students: aluno){
+            students.imprimir();
+        }
+    }
+    
+   
+}
+
+```
+
+```java
+package pratica02;
+public class Pratica02 {
+    public static void main(String[] args) {
+        Data data = new Data(21,3,2008);
+        Aluno aluno = new Aluno(112345, "Davi Anderson", 'm', "12345", "87655738238", data);
+        
+        Data data2 = new Data(15,9,2004);
+        Aluno aluno2 = new Aluno(112363, "Nicolas Andrade", 'm', "54321", "4338341982", data2);
+        
+        Data data3 = new Data(21,2,2000);
+        Aluno aluno3 = new Aluno(112903, "Maria Joaquina", 'f', "12365", "25718728390", data3);
+        
+        aluno.imprimir();
+        aluno2.imprimir();
+        aluno3.imprimir();
+        
+        Escola escola = new Escola();
+        escola.adicionarAluno(aluno);
+        escola.adicionarAluno(aluno2);
+        escola.adicionarAluno(aluno3);
+        
+        escola.removerAluno("12365");
+        System.out.println("");
+        escola.imprimir();
+        
+    }
+    
+}
+
+```
+
+**9° Testes automatizados:**
+```java
+package pratica02;
+public class Pratica02 {
+    public static void main(String[] args) {
+        Data data = new Data(21,3,2008);
+        Aluno aluno = new Aluno(112345, "Davi Anderson", 'm', "12345", "87655738238", data);
+        
+        Data data2 = new Data(15,9,2004);
+        Aluno aluno2 = new Aluno(112363, "Nicolas Andrade", 'm', "54321", "4338341982", data2);
+        
+        Data data3 = new Data(21,2,2000);
+        Aluno aluno3 = new Aluno(112903, "Maria Joaquina", 'f', "12365", "25718728390", data3);
+        
+        aluno.imprimir();
+        aluno2.imprimir();
+        aluno3.imprimir();
+        
+        Escola escola = new Escola();
+        escola.adicionarAluno(aluno);
+        escola.adicionarAluno(aluno2);
+        escola.adicionarAluno(aluno3);
+        
+        escola.removerAluno("12365");
+        System.out.println("");
+        escola.imprimir();
+        
+       
+    }
+    
+}
+
+```
 
 
 
